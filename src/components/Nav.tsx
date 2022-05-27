@@ -3,11 +3,14 @@ import iconImg from "../assets/images/Icon.svg";
 import logoImg from "../assets/images/Logo.svg";
 import whiteIconImg from "../assets/images/WhiteIcon.svg";
 import whiteLogoImg from "../assets/images/WhiteLogo.svg";
+import { useSidebar } from "../hooks/useSidebar";
 import { NavButton } from "./NavButton";
 import { Sidebar } from "./Sidebar";
 
 export function Nav() {
   const [navbarBackground, setNavbarBackground] = useState(false);
+
+  const { handleCloseSideBar } = useSidebar();
 
   function changedBackground() {
     const scroll = scrollY;
@@ -37,7 +40,7 @@ export function Nav() {
       ) : (
         <img src={whiteLogoImg} alt="Logo" className="mb-5" />
       )}
-      <ul className="hidden sm:flex gap-8">
+      <ul className="hidden sm:flex gap-8 ml-56">
         <li className="text-green-500 opacity-70 hover:opacity-100">
           <a href="#">Início</a>
         </li>
@@ -53,9 +56,17 @@ export function Nav() {
       </ul>
       <NavButton text="AGENDAR CONSULTA" />
       {!navbarBackground ? (
-        <img src={iconImg} alt="List Button" className="sm:hidden mb-5" />
+        <button onClick={handleCloseSideBar}>
+          <img src={iconImg} alt="List Button" className="sm:hidden mb-5" />
+        </button>
       ) : (
-        <img src={whiteIconImg} alt="List Button" className="sm:hidden mb-5" />
+        <button onClick={handleCloseSideBar}>
+          <img
+            src={whiteIconImg}
+            alt="List Button"
+            className="sm:hidden mb-5"
+          />
+        </button>
       )}
       <Sidebar />
     </nav>
