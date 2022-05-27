@@ -5,9 +5,9 @@ import "./styles/main-container.scss";
 
 function App() {
   return (
-    <div className="main-container w-screen">
+    <div className="main-container">
+      <Nav />
       <div className="max-w-7xl m-auto flex flex-col">
-        <Nav />
         <Header />
         <Stats />
       </div>
