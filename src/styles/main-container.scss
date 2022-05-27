@@ -1,0 +1,13 @@
+.main-container::before {
+  content: "";
+  background-color: #dce9e2;
+  width: 100vw;
+  height: 750px;
+
+  position: absolute;
+  z-index: -1;
+
+  @media (max-width: 720px) {
+    height: 1060px;
+  }
+}
