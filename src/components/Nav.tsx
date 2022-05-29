@@ -21,7 +21,7 @@ export function Nav() {
     }
   }
 
-  addEventListener("scroll", changedBackground);
+  addEventListener("scroll", changedBackground);  
 
   return (
     <nav
@@ -36,17 +36,9 @@ export function Nav() {
       }
     >
       {!navbarBackground ? (
-        <img
-          src={logoImg}
-          alt="Logo"
-          className="mb-5 sm:mb-0"
-        />
+        <img src={logoImg} alt="Logo" className="mb-5 sm:mb-0" />
       ) : (
-        <img
-          src={whiteLogoImg}
-          alt="Logo"
-          className="mb-5 sm:mb-0"
-        />
+        <img src={whiteLogoImg} alt="Logo" className="mb-5 sm:mb-0" />
       )}
       <ul className="hidden sm:flex gap-8 ml-56">
         <li
@@ -56,7 +48,7 @@ export function Nav() {
               : "text-white-100 opacity-70 hover:opacity-100"
           }`}
         >
-          <a href="#">Início</a>
+          <button>Início</button>
         </li>
         <li
           className={`${
@@ -65,7 +57,7 @@ export function Nav() {
               : "text-white-100 opacity-70 hover:opacity-100"
           }`}
         >
-          <a href="#">Serviços</a>
+          <a href="services">Serviços</a>
         </li>
         <li
           className={`${
@@ -74,7 +66,7 @@ export function Nav() {
               : "text-white-100 opacity-70 hover:opacity-100"
           }`}
         >
-          <a href="#">Sobre</a>
+          <a href="about">Sobre</a>
         </li>
         <li
           className={`${

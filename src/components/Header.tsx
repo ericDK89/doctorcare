@@ -5,6 +5,7 @@ export function Header() {
 
   return (
     <header
+      id="hero"
       className="flex flex-col sm:flex-row items-center justify-between
       text-center sm:text-left pt-28"
     >

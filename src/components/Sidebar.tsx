@@ -1,9 +1,7 @@
 import closeIconImg from "../assets/images/CloseIcon.svg";
-import facebookIcon from "../assets/images/facebookIcon.svg";
-import instagramIcon from "../assets/images/instagramIcon.svg";
 import whiteLogoImg from "../assets/images/WhiteLogo.svg";
-import youtubeIcon from "../assets/images/youtubeIcon.svg";
 import { useSidebar } from "../hooks/useSidebar";
+import { SocialLinks } from "./SocialLinks";
 
 export function Sidebar() {
   const { handleCloseSideBar, showSidebar } = useSidebar();
@@ -48,27 +46,7 @@ export function Sidebar() {
           <a href="#">AGENDA SUA CONSULTA</a>
         </li>
       </ul>
-      <div>
-        <ul className="flex justify-center mt-20 gap-8">
-          <li>
-            <a href="#">
-              <img src={instagramIcon} alt="" />
-            </a>
-          </li>
-
-          <li>
-            <a href="#">
-              <img src={facebookIcon} alt="" />
-            </a>
-          </li>
-
-          <li>
-            <a href="#">
-              <img src={youtubeIcon} alt="" />
-            </a>
-          </li>
-        </ul>
-      </div>
+      <SocialLinks marginTop="mt-20" />
     </div>
   );
 }

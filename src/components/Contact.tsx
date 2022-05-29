@@ -14,22 +14,29 @@ export function Contact() {
           Entre em contato com a gente!
         </h3>
         <address className="flex flex-col my-8">
-          <span className="text-gray-700 not-italic">
+          <a
+            href="http://maps.google.com?q=48.8583736,2.2922926"
+            target="_blank"
+            className="text-gray-700 not-italic underline underline-offset-1"
+          >
             <img
               src={mapPinImg}
               alt="Localização"
               className="inline mr-2 mb-4 w-6 h-6"
             />
             R. Amauri Souza, 346
-          </span>
-          <span className="text-gray-700 not-italic">
+          </a>
+          <a
+            href="mailto:email@example.com"
+            className="text-gray-700 not-italic underline underline-offset-1"
+          >
             <img
               src={mailIcon}
               alt="Envie um email"
               className="inline mr-2 w-6 h-6"
             />
             contato@doctorcare.com
-          </span>
+          </a>
         </address>
         <div className="mr-[1.2rem]">
           <Button />
