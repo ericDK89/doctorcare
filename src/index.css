@@ -8,6 +8,11 @@
   box-sizing: border-box;
 }
 
+/* background green-50 */
+body {
+  background-color: #f7f9f9;
+}
+
 body,
 input,
 textarea,

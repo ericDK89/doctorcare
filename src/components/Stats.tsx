@@ -1,5 +1,3 @@
-import '../styles/services.scss';
-
 export function Stats() {
   return (
     <article id="stats"

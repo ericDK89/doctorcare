@@ -1,3 +1,5 @@
+import { AboutUs } from "./components/AboutUs";
+import { Contact } from "./components/Contact";
 import { Header } from "./components/Header";
 import { Nav } from "./components/Nav";
 import { Services } from "./components/Services";
@@ -13,8 +15,10 @@ function App() {
         <div className="max-w-7xl m-auto flex flex-col">
           <Header />
           <Stats />
-          <Services />
         </div>
+        <Services />
+        <AboutUs />
+        <Contact />
       </div>
     </SidebarContextProvider>
   );
