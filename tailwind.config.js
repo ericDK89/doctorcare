@@ -7,6 +7,7 @@ module.exports = {
       "green-500": "#00856f",
       "green-800": "#00453a",
       "beige-100": "#fffaf1",
+      "white-50": "#ffffff",
       "white-100": "#ededed",
       "gray-500": "#384633",
       "gray-700": "#495057",
