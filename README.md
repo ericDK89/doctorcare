@@ -10,7 +10,7 @@
 
 <h1 align="center">Mobile</h1>
 
-<palign="center">  
+<p align="center">  
   <img alt="DoctorCareMobile" src="https://user-images.githubusercontent.com/68076508/171062715-422898db-27f3-4354-817b-ca3f573744f7.gif" width="500">
 </p>
 
