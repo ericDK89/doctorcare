@@ -3,15 +3,20 @@ import "../styles/nav-menu.scss";
 
 interface NavMenuProps {
   text: string;
-  isCurrentSection?: boolean;
+  moveTo: number;
 }
 
-export function NavMenu({ text, isCurrentSection }: NavMenuProps) {
-  const { navbarBackground, scroll } = useNavbar();
+export function NavMenu({ text, moveTo }: NavMenuProps) {
+  const { navbarBackground } = useNavbar();
 
   return (
-    <button className={`${navbarBackground ? "background" : "no-background"} 
-                        ${isCurrentSection && "current"}`}>
+    <button
+      onClick={() => {
+        window.scrollTo(0, moveTo);
+      }}
+      className={`${navbarBackground ? "background" : "no-background"}
+`}
+    >
       {text}
     </button>
   );

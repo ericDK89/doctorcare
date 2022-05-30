@@ -3,6 +3,12 @@
   font-weight: bold;
   padding-block: 1.5rem;
   opacity: 0.7;
+  transition: all 0.2s;
+
+  &:hover {
+    letter-spacing: 0.03125rem;
+    opacity: 1;
+  }
 }
 
 .no-background {
@@ -10,8 +16,18 @@
   font-weight: bold;
   padding-block: 1.5rem;
   opacity: 0.7;
+  transition: all 0.2s;
+
+  &:hover {
+    letter-spacing: 0.03125rem;
+    opacity: 1;
+  }
 }
 
-.current {
+.current-background {
   border-bottom: 2px solid #f7f9f9;
+}
+
+.current-no-background {
+  border-bottom: 2px solid #00856f;
 }

@@ -10,6 +10,7 @@ import { SidebarContextProvider } from "./context/SidebarContext";
 import "./styles/main-container.scss";
 
 export default function App() {
+
   return (
     <NavbarContextProvider>
       <SidebarContextProvider>

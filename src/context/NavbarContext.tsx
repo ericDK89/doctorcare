@@ -1,8 +1,7 @@
-import { createContext, useEffect, useState } from "react";
+import { createContext, useState } from "react";
 
 interface NavbarContext {
   navbarBackground: boolean;
-  scroll: boolean;
 }
 
 interface NavbarContextProviderProps {
@@ -15,7 +14,6 @@ export function NavbarContextProvider({
   children,
 }: NavbarContextProviderProps) {
   const [navbarBackground, setNavbarBackground] = useState(false);
-  const [scroll, setScroll] = useState(false);
 
   function changedBackground() {
     const scroll = window.scrollY;
@@ -28,20 +26,8 @@ export function NavbarContextProvider({
 
   window.addEventListener("scroll", changedBackground);
 
-  useEffect(() => {
-    function onScroll() {
-      const scrollCheck = window.scrollY <= 650;
-      setScroll(scrollCheck);
-    }
-
-    document.addEventListener("scroll", onScroll);
-    return () => {
-      document.removeEventListener("scroll", onScroll);
-    };
-  }, [scroll, setScroll]);
-
   return (
-    <NavbarContext.Provider value={{ navbarBackground, scroll }}>
+    <NavbarContext.Provider value={{ navbarBackground }}>
       {children}
     </NavbarContext.Provider>
   );

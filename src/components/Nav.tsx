@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import iconImg from "../assets/images/Icon.svg";
 import logoImg from "../assets/images/Logo.svg";
 import whiteIconImg from "../assets/images/WhiteIcon.svg";
@@ -11,6 +12,18 @@ import { Sidebar } from "./Sidebar";
 export function Nav() {
   const { navbarBackground } = useNavbar();
   const { handleCloseSideBar } = useSidebar();
+
+  const [navigation, setNavigation] = useState(0);
+
+  useEffect(() => {
+    function onScroll() {
+      setNavigation(window.scrollY);
+    }
+
+    document.addEventListener("scroll", onScroll);
+  }, [navigation]);
+
+  console.log(navigation);
 
   return (
     <nav
@@ -31,10 +44,10 @@ export function Nav() {
       )}
 
       <div className="hidden sm:flex gap-8 ml-56">
-        <NavMenu text="Início" isCurrentSection={true}/>
-        <NavMenu text="Serviços" />
-        <NavMenu text="Sobre" />
-        <NavMenu text="Depoimentos" />
+        <NavMenu text="Início" moveTo={0} />
+        <NavMenu text="Serviços" moveTo={800} />
+        <NavMenu text="Sobre" moveTo={1800} />
+        <NavMenu text="Contato" moveTo={2500} />
       </div>
 
       <NavButton text="AGENDAR CONSULTA" navbarBackground={navbarBackground} />
