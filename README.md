@@ -1,12 +1,12 @@
-<h1 align="left">Desktop</h1>
+<h1 align="center">Desktop</h1>
 
-<h1 align="left">  
+<h1 align="center">  
   <img alt="DoctorCareDesktop" src="https://user-images.githubusercontent.com/68076508/171062381-94e0a4d9-ef5d-46d5-ab1e-8812b06b26b3.gif" width="500">
 </h1>
 
-<h1 align="right">Mobile</h1>
+<h1 align="center">Mobile</h1>
 
-<h1 align="right">  
+<h1 align="center">  
   <img alt="DoctorCareMobile" src="https://user-images.githubusercontent.com/68076508/171062715-422898db-27f3-4354-817b-ca3f573744f7.gif" width="500">
 </h1>
 
