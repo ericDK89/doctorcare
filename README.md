@@ -1,3 +1,7 @@
+<h1 align="center">  
+  <img alt="DoctorCareDesktop" src="https://user-images.githubusercontent.com/68076508/171063006-bac89e48-0541-4f0e-af50-9da02f728e3f.svg">
+</h1>
+
 <h1 align="center">Desktop</h1>
 
 <h1 align="center">  
