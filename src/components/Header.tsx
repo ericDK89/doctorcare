@@ -1,7 +1,7 @@
 import womanImg from "../assets/images/woman.png";
 import { Button } from "./Button";
 
-export function Header() {
+export function Header() {  
 
   return (
     <header

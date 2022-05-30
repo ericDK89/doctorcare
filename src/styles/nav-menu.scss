@@ -1,0 +1,17 @@
+.background {
+  color: #f7f9f9;
+  font-weight: bold;
+  padding-block: 1.5rem;
+  opacity: 0.7;
+}
+
+.no-background {
+  color: #00856f;
+  font-weight: bold;
+  padding-block: 1.5rem;
+  opacity: 0.7;
+}
+
+.current {
+  border-bottom: 2px solid #f7f9f9;
+}
