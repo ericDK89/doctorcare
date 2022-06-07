@@ -34,9 +34,9 @@ https://doctorcare-dp1nlyk3o-ericdk89.vercel.app/
 ## 📄 Projeto
 
 DoctorCare é uma landing page de um plano de saúde, com uma tela responsiva tanto para mobile quanto para desktops e notebooks. A paǵina conta com uma
-barra de navegação fixa no top da tela que também se adapta para telas de mobiles. 
+barra de navegação fixa no topo da tela que também se adapta para telas mobiles. 
 
-Crie esse projeto com base no Next Level Week Return da [ Rockeseat](https://www.rocketseat.com.br/).
+Projeto criado com base no Next Level Week Return da [ Rockeseat](https://www.rocketseat.com.br/).
 
 ## 🔖 Layout
 
@@ -46,4 +46,4 @@ Você pode visualizar o layout do projeto através do link abaixo:
 
 Lembrando que você precisa ter uma conta no [Figma](http://figma.com/).
 
-Feito por Eric 🌠
+Feito por Eric 🌌 [LinkedIn](https://www.linkedin.com/in/eric-macedo-dev/).
